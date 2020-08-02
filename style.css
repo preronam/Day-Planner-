@@ -1,0 +1,27 @@
+/* STYLE FOR THE MAIN HEADER */
+.display-3{
+    text-align: center;
+    font-weight: bolder;
+    color: teal;
+    background-color: navajowhite;
+}
+/* STYLE FOR THE OUTER CONTAINER WITH TIMES LISTED */
+.container{
+    font-weight: bold;
+    font-size: medium;
+    color:wheat;
+    background-color: lightseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* STYLE FOR THE TEXT INPUT AREA */
+.form-control{
+    background-color: cornsilk;
+}
+
+/* STYLE FOR THE SAVE BUTTON */
+.saveBtn{
+  background-color: gold;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkcyan;
+}
