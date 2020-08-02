@@ -56,21 +56,18 @@ $(window).on("load", function () {
     $(".saveBtn").click(function () {
         eventText = $(this).parent('div').children('div').children('textarea').val();
         eventTime = $(this).parent('div').parent().attr("id");
-
-        const timeSelector = $(this).attr("class");
-        $(timeSelector + "text")
-
+        
         events = {
             time: eventTime,
             details: eventText
         }
-        tempArray = JSON.parse(localStorage.getItem("events"));
-        if (tempArray === null) {
+        tempArr = JSON.parse(localStorage.getItem("events"));
+        if (tempArr === null) {
             localStorage.setItem('events', JSON.stringify([{ time: eventTime, details: eventText }]));
         }
         else {
-            tempArray.push(event);
-            localStorage.setItem("events", JSON.stringify(tempArray));
+            tempArr.push(events);
+            localStorage.setItem("events", JSON.stringify(tempArr));
 
         }
         $(this).parent('div').children('div').children('textarea').replaceWith($('<textarea>' + eventText.addClass("textarea") + '</textarea>'));
